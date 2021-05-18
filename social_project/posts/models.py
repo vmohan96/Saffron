@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from django.conf import settings
+from django.utils import timezone
 
 import misaka
 from groups.models import Group
@@ -12,12 +13,12 @@ User = get_user_model()
 # POSTS MODELS.PY
 
 class Post(models.Model):
-    user = models.ForeignKey(User, related_name='posts')
-    created_at = models.DateTimeField(auto_new=True)
+    user = models.ForeignKey(User, related_name='posts', on_delete=models.DO_NOTHING)
+    created_at = models.DateTimeField(default=timezone.now)
     message = models.TextField()
     message_html = models.TextField(editable=False)
 
-    group = models.ForeignKey(Group, related_name='posts',null=True,blank=True)
+    group = models.ForeignKey(Group, related_name='posts',null=True,blank=True, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.message
@@ -27,7 +28,7 @@ class Post(models.Model):
         super().save(*args, **kwargs)
 
     def get_absolute_url(self):
-        return reverse('posts:single', **kwargs={'username':self.user.username,
+        return reverse('posts:single', kwargs={'username':self.user.username,
                                                  'pk':self.pk})
 
     class Meta():
