@@ -1,3 +1,57 @@
-body {
-  background-color: grey;
+/* body {
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-blend-mode: darken;
+} */
+
+
+body::before {
+    content:'';
+      background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.4;
+}
+
+.make-rel {
+  position: relative;
+}
+
+
+.site-title {
+  padding: 50px;
+  position: relative;
+}
+
+.create-new {
+  padding: 50px;
+  position: relative;
+}
+
+.content {
+  padding: 0px;
+  position: relative;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+
+.post-container {
+  border: 2px solid grey;
+  padding: 8px;
+}
+
+
+@media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
 }
