@@ -1,0 +1,37 @@
+{% extends "recipes/recipe_base.html" %}
+
+
+{% block recipe_content %}
+<div class="col-md-8 content center">
+	{% if request.user.is_authenticated %}
+	<div class="card card-with-shadow">
+		<div class="content container-fluid">
+			<h2 class='within-box'> <strong> {{ title }}</strong> </h2>
+
+			<p class='within-box'>
+				{{ summary|safe }}
+    	</p>
+
+			<h4 class='within-box'>Directions</h4>
+
+			<p class='within-box'>
+				{{ instructions|safe }}
+    	</p>
+
+			<img src= '{{ image }}' class="center" alt="Could not load image, sorry!">
+
+
+
+
+
+
+
+	{% endif %}
+
+
+
+		</div>
+	</div>
+
+
+{% endblock  %}
