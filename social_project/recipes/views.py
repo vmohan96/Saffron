@@ -11,7 +11,8 @@ def recipe_base(request):
 def get_recipe():
 
 
-    random_num = np.random.randint(1,999999)
+    # random_num = np.random.randint(1,999999)
+    random_num = 621834
 
     url = f'https://api.spoonacular.com/recipes/{random_num}/information?apiKey=d955d2635248430f9f297dbbbc8229d3'
 
