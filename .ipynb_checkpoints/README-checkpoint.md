@@ -55,7 +55,7 @@ This application was built primarily using the Django web framework. Django is a
 
 Django generates a SQLite database upon app creation, and using Python Objects, I constructed "models" which corresponded to the various types of information that the app would need to store. Each user would have their own instance of the User model, which would contain their username, email, and a password that is automatically encrypted using a PBKDF2 algorithm with a SHA256 hash. As each user created posts and joined groups, this information would be added to their object model and stored in the database. Similarly, each Group created by a user has an object model associated with it on the backend. This contains information on the group's title, description, and the number of current members.
 
-Each page's functionality was created using a combination of Django's "views" functionality and HTML/CSS. You can see all of the code for the web application in the "social_project" folder; but for more information on Django's views and how they interact with HTML/CSS to quickly create clean website functionality, I highly recommend checking out their well-written documentation right here: [https://docs.djangoproject.com/en/3.2/](Django Docs)
+Each page's functionality was created using a combination of Django's "views" functionality and HTML/CSS. You can see all of the code for the web application in the "social_project" folder; but for more information on Django's views and how they interact with HTML/CSS to quickly create clean website functionality, I highly recommend checking out their well-written documentation right here: [Django Docs](https://docs.djangoproject.com/en/3.2/)
 
 
 ### Sources/References
