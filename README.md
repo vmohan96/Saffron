@@ -59,10 +59,10 @@ Each page's functionality was created using a combination of Django's "views" fu
 
 
 ### Sources/References
-- I took Jose Portilla's Django Web Development Course in order to become familiar with the framework and build the high-level structure for the website; check that out here: [https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/learn/](Python and Django Full Stack Web Developer Bootcamp)
-- The Spoonacular API was used to create the Recipe of the Day page, it's a great API I also recommend checking out: [https://spoonacular.com/food-api](Spoonacular API)
-- Django documentation is very well written and it was also used for reference at every step of this project: [https://docs.djangoproject.com/en/3.2/](Django Docs)
-- Bootstrap 4.6.0 was used for style formatting: [https://getbootstrap.com/docs/4.6/getting-started/introduction/](Bootstrap 4.6.0)
+- I took Jose Portilla's Django Web Development Course in order to become familiar with the framework and build the high-level structure for the website; check that out here: [Python and Django Full Stack Web Developer Bootcamp](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/learn/)
+- The Spoonacular API was used to create the Recipe of the Day page, it's a great API I also recommend checking out: [Spoonacular API](https://spoonacular.com/food-api)
+- Django documentation is very well written and it was also used for reference at every step of this project: [Django Docs](https://docs.djangoproject.com/en/3.2/)
+- Bootstrap 4.6.0 was used for style formatting: [Bootstrap 4.6.0](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 
 
 
